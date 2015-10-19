@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "83E4E3191BD5823E00507911"
+               BuildableName = "NotificationMiniLesson.app"
+               BlueprintName = "NotificationMiniLesson"
+               ReferencedContainer = "container:NotificationMiniLesson.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "83E4E32D1BD5823E00507911"
+               BuildableName = "NotificationMiniLessonTests.xctest"
+               BlueprintName = "NotificationMiniLessonTests"
+               ReferencedContainer = "container:NotificationMiniLesson.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "83E4E3381BD5823E00507911"
+               BuildableName = "NotificationMiniLessonUITests.xctest"
+               BlueprintName = "NotificationMiniLessonUITests"
+               ReferencedContainer = "container:NotificationMiniLesson.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "83E4E3191BD5823E00507911"
+            BuildableName = "NotificationMiniLesson.app"
+            BlueprintName = "NotificationMiniLesson"
+            ReferencedContainer = "container:NotificationMiniLesson.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "83E4E3191BD5823E00507911"
+            BuildableName = "NotificationMiniLesson.app"
+            BlueprintName = "NotificationMiniLesson"
+            ReferencedContainer = "container:NotificationMiniLesson.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "83E4E3191BD5823E00507911"
+            BuildableName = "NotificationMiniLesson.app"
+            BlueprintName = "NotificationMiniLesson"
+            ReferencedContainer = "container:NotificationMiniLesson.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

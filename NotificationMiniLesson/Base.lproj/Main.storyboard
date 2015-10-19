@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4YO-TB-9h6">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="NotificationMiniLesson" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,108 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fdy-gE-kP9">
+                                <rect key="frame" x="20" y="114" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqO-9V-7E0">
+                                <rect key="frame" x="241" y="181" width="119" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="sad-ie-o68"/>
+                                </constraints>
+                                <state key="normal" title="Send Notification"/>
+                                <connections>
+                                    <action selector="sendNotificationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P0t-fl-Rkz"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="daM-DZ-KYU">
+                                <rect key="frame" x="20" y="51" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="daM-DZ-KYU" secondAttribute="trailing" constant="20" id="4Qf-nx-zYh"/>
+                            <constraint firstItem="Fdy-gE-kP9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="79F-De-NaA"/>
+                            <constraint firstItem="Fdy-gE-kP9" firstAttribute="top" secondItem="daM-DZ-KYU" secondAttribute="bottom" constant="33" id="CUM-94-OiE"/>
+                            <constraint firstItem="MqO-9V-7E0" firstAttribute="top" secondItem="Fdy-gE-kP9" secondAttribute="bottom" constant="37" id="PPt-9n-WVV"/>
+                            <constraint firstAttribute="trailing" secondItem="Fdy-gE-kP9" secondAttribute="trailing" constant="20" id="RK1-Wi-CB1"/>
+                            <constraint firstItem="MqO-9V-7E0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ROH-K6-d5a"/>
+                            <constraint firstItem="daM-DZ-KYU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="u3i-0O-7Zt"/>
+                            <constraint firstItem="daM-DZ-KYU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="yFl-vD-rQo"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Jz4-1j-Akw"/>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="daM-DZ-KYU" id="shv-go-NfS"/>
+                        <outlet property="lastNameTextField" destination="Fdy-gE-kP9" id="B6E-cl-2dM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="985" y="-88"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="DC8-rn-IU7">
+            <objects>
+                <viewController id="gqP-lE-Lqi" customClass="SecondViewController" customModule="NotificationMiniLesson" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W0D-Ch-Hz5"/>
+                        <viewControllerLayoutGuide type="bottom" id="U2V-Pe-Vg8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1lj-3Z-d44">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3y6-z8-PSA">
+                                <rect key="frame" x="17" y="61" width="567" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="3y6-z8-PSA" secondAttribute="trailing" constant="-4" id="Q9H-0j-7h3"/>
+                            <constraint firstItem="3y6-z8-PSA" firstAttribute="leading" secondItem="1lj-3Z-d44" secondAttribute="leadingMargin" constant="-3" id="V6w-wE-KoT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="2nc-dJ-ZYZ"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="3y6-z8-PSA" id="0EH-99-3gi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GgS-SG-ydX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="580"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="XSd-U9-Cgi">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4YO-TB-9h6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Vsm-32-UIB">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="kdg-JQ-lHA"/>
+                        <segue destination="gqP-lE-Lqi" kind="relationship" relationship="viewControllers" id="pik-Jr-TB4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sln-K9-vy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="293"/>
         </scene>
     </scenes>
 </document>
